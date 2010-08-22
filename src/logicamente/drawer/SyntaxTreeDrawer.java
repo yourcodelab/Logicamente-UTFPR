@@ -101,14 +101,13 @@ public class SyntaxTreeDrawer extends JFrame implements ActionListener {
 			drawingPanel = new JPanel();
 		}
 
-		JLabel inputFormulaLabel = new JLabel();
+		JLabel inputFormulaLabel = new JLabel("Formula:", JLabel.LEFT);
 		inputFormulaLabel.setFont(inputFormulaLabel.getFont().deriveFont(
 				(float) 30.0));
 		JTextField inputFormulaTextField = new JTextField(30);
 		inputFormulaTextField.setFont(inputFormulaTextField.getFont()
 				.deriveFont((float) 30.0));
 		inputFormulaTextField.addActionListener(this);
-		inputFormulaLabel.setText("Formula: ");
 		inputFormulaTextField.setText("");
 
 		getContentPane().setLayout(new BorderLayout());
